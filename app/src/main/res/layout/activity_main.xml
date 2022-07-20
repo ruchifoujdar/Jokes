@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <View
+       android:id="@+id/random_joke_btn"
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:layout_marginEnd="16dp"
+       android:layout_marginBottom="12dp"
+       android:background="#F18FB0"
+       app:layout_constraintBottom_toTopOf="@+id/categories_btn"
+       app:layout_constraintEnd_toStartOf="@+id/search_joke_btn"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <View
+       android:id="@+id/search_joke_btn"
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:layout_marginBottom="531dp"
+       android:background="#EFE273"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <View
+       android:id="@+id/categories_btn"
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:layout_marginTop="12dp"
+       android:layout_marginEnd="211dp"
+       android:layout_marginBottom="319dp"
+       android:background="#6EACDD"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/random_joke_btn" />
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Random Joke"
+       android:textColor="#FDF8F8"
+       android:textSize="24sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.139"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.116" />
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Search"
+       android:textColor="#FDF8F8"
+       android:textSize="24sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.785"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.116" />
+
+   <TextView
+       android:id="@+id/textView4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Categories"
+       android:textColor="#FDF8F8"
+       android:textSize="24sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.128"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.443" />
+
+   <ProgressBar
+       android:id="@+id/progressDialog"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:indeterminateTint="@color/black"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="52dp"
+       android:text="Retry"
+       android:id="@+id/retry_btn"
+       app:layout_constraintBottom_toTopOf="@+id/progressDialog"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
